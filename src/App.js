@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Form from './components/Form';
 import Weather from './components/Weather';
+import Suggestion from './components/Suggestion';
 import './App.css';
 
 function App() {
@@ -21,13 +22,14 @@ function App() {
 			});
 	};
 	useEffect(() => {
-		fetchData('Novi Sad');
+		fetchData('Gospodjinci');
 	}, []);
 
 	return (
 		<div className="App">
 			<Form weatherData={weatherData} fetchData={fetchData} />
 			<Weather weatherData={weatherData} />
+			<Suggestion fetchData={fetchData} />
 		</div>
 	);
 }
