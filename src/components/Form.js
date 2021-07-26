@@ -14,10 +14,15 @@ function Form({ fetchData, weatherData }) {
 	};
 
 	return (
-		<div>
+		<div className="form-container">
+			<h2>Prognoza za slatku</h2>
 			<form onSubmit={handleSubmit}>
-				<label>City name:</label>
-				<input onChange={handleChange} value={city} type="text" />
+				<input
+					placeholder="ovde kucas ime grada"
+					onChange={handleChange}
+					value={city}
+					type="text"
+				/>
 			</form>
 		</div>
 	);
