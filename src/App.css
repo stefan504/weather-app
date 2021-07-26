@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.weatherContainer {
+	text-align: center;
+	background-color: azure;
+	width: 70%;
+	margin: 0 auto;
+	padding: 1em;
+}
